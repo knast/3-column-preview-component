@@ -1,0 +1,10 @@
+body {
+  background-color:hsl(0, 0%, 95%);
+}
+
+.container {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  width:70%;
+  margin:500px auto;
+}
