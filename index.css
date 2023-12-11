@@ -76,7 +76,13 @@ p {
   border:none;
   font-family:'Lexend Deca', sans-serif;
   font-size:17px;
+  background-color:hsl(0, 0%, 95%);
   
+}
+
+.learn-more:hover {
+  background-color:hsl(0, 0%, 87%);
+  transition:0.5s;
 }
 
 .sedans > button {
