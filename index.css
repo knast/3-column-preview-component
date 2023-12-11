@@ -9,15 +9,23 @@ body {
   justify-content:center;
   align-items:center;
   flex-direction:column;
+  overflow:hidden;
+  
   
 }
+
+
 
 .container {
   margin:0 auto;
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  max-width:70%;
+  max-width:1000px;
   height:500px;
+  border-collapse:separate;
+  border-radius:8px;
+  
+  
   
   
 }
@@ -28,13 +36,19 @@ img {
 }
 h1 {
   font-family:'Big Shoulders Display', sans-serif;
+  font-size:50px;
+  color:hsl(0, 0%, 95%);
 }
 
 p {
   font-family:'Lexend Deca', sans-serif;
+  font-size:15px;
+  color:hsla(0, 0%, 100%, 0.75);
 }
 .sedans {
   background-color:hsl(31, 77%, 52%);
+  border-top-left-radius:8px;
+  border-bottom-left-radius:8px;
 }
 
 .suvs {
@@ -43,9 +57,40 @@ p {
 
 .luxury {
   background-color:hsl(179, 100%, 13%);
+  border-top-right-radius:8px;
+  border-bottom-right-radius:8px;
 }
 
 .sedans, .suvs, .luxury {
+  display:flex;
+  justify-content:space-around;
+  flex-direction:column;
+  padding:50px;
   
-  padding:30px;
+}
+
+.learn-more {
+  width:170px;
+  height:50px;
+  border-radius:25px;
+  border:none;
+  font-family:'Lexend Deca', sans-serif;
+  font-size:17px;
+  
+}
+
+.sedans > button {
+  color:hsl(31, 77%, 52%);
+}
+
+.suvs > button {
+  color:hsl(184, 100%, 22%);
+}
+
+.luxury > button {
+  color: hsl(179, 100%, 13%);
+}
+
+footer {
+  font-family:'Lexend Deca', sans-serif;
 }
